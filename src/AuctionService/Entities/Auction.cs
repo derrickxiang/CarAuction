@@ -7,7 +7,7 @@ public class Auction
     public string Seller { get; set; }
     public string Winner { get; set; }
     public int SoldAmount { get; set; }
-    public int CurrentHighBid { get; set; }
+    public int? CurrentHighBid { get; set; }
     public DateTime CreateAt { get; set; }  = DateTime.UtcNow;
     public DateTime UpdateAt { get; set; } = DateTime.UtcNow;
     public DateTime AuctionEnd { get; set; }   = DateTime.UtcNow;
